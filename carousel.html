@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="scriptaculous.js"></script>
+  <script type="text/javascript" src="carousel.js"></script>
+
+  <style>
+  body {font-family: Verdana}
+  .controls { background-color: transparent; border: 1px solid #E5E5E5; padding: 3px 5px; margin-top: 0px; text-align: center; font-family: Verdana; }
+  .controls a {font-weight: bold}
+  .carousel {overflow: hidden;}
+  .carousel .inner {}
+  .carousel .middle { overflow: auto;}
+  div.carousel_text_content{ font-size: 8px; line-height: 1.0em; }
+
+  #carousel-1 {background-color: transparent;border: 1px solid #E5E5E5;width: 610px;height: 150px;}
+  #carousel-1 .middle {height: 200px;}
+  #carousel-1 .slide {float: left;overflow: hidden;width: 81px;height: 150px;padding: 10px;border-right: 1px solid #E5E5E5;text-align: left;line-height:1.3em;}
+
+  #carousel-2 {background-color: transparent;border: 1px solid #E5E5E5;width: 610px;height: 150px;}
+  #carousel-2 .middle {height: 200px;}
+  #carousel-2 .slide {float: left;overflow: hidden;width: 300px;height: 150px;padding: 10px;border-right: 1px solid #E5E5E5;text-align: left;line-height:1.3em;}
+  
+  
+  </style>
+  
+</head>
+
+
+<body>
+
+
+ <div class="carousel" id="carousel-1"> 
+ 
+	<div class="controls"> 
+		<table style="width: 600px;"> 
+			<tr> 
+				<td class="shoperators" style="padding: 0px; text-align: left; width: 33%"> 
+					<a href="javascript:" class="carousel-control ico-prev shoperators" rel="prev">&lt; Previous</a> 
+				</td> 
+				<td class="shoperators" style="padding: 0px; text-align: center"> 
+					<b>Carousel 1</b> 
+				</td> 
+				<td class="shoperators" style="padding: 0px; text-align: right; width: 33%"> 
+					<a href="javascript:" class="carousel-control ico-next shoperators" rel="next">Next &gt;</a> 
+				</td> 
+		 </tr> 
+		</table> 
+	</div> 
+ 
+	<div class="middle"> 
+		<div class="inner" style="width: 24000px;"> 
+		    <!-- carousel for logo --> 
+	      <div class="slide"> 
+					<div>slide 1</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 2</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 3</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 4</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 5</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 6</div> 
+				</div> 
+	      <div class="slide"> 
+ 				  <div>slide 7</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 8</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 9</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 10</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 11</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 12</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 13</div> 
+				</div> 
+		
+    </div> 
+  </div> 
+</div> 
+ 
+<script type="text/javascript"> 
+ new Carousel(
+	$('carousel-1').down('.middle'), 
+	$('carousel-1').select('.slide'), 
+	$('carousel-1').select('.controls a'), 
+	{duration: 0.3, moveSlides: 6}
+ );
+</script>
+ 
+
+  <div class="carousel" id="carousel-2"> 
+ 
+	<div class="controls"> 
+		<table style="width: 600px;"> 
+			<tr> 
+				<td class="shoperators" style="padding: 0px; text-align: left; width: 33%"> 
+					<a href="javascript:" class="carousel-control ico-prev shoperators" rel="prev">&lt; Previous</a> 
+				</td> 
+				<td class="shoperators" style="padding: 0px; text-align: center"> 
+					<b>Carousel 2</b> 
+				</td> 
+				<td class="shoperators" style="padding: 0px; text-align: right; width: 33%"> 
+					<a href="javascript:" class="carousel-control ico-next shoperators" rel="next">Next &gt;</a> 
+				</td> 
+		 </tr> 
+		</table> 
+	</div> 
+ 
+	<div class="middle"> 
+		<div class="inner" style="width: 24000px;"> 
+		    <!-- carousel for logo --> 
+	      <div class="slide"> 
+					<div>slide 1</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 2</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 3</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 4</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 5</div> 
+				</div> 
+	      <div class="slide"> 
+					<div>slide 6</div> 
+				</div> 		
+    </div> 
+  </div> 
+</div> 
+ 
+<script type="text/javascript"> 
+ new Carousel(
+	$('carousel-2').down('.middle'), 
+	$('carousel-2').select('.slide'), 
+	$('carousel-2').select('.controls a'), 
+	{duration: 0.3, moveSlides: 2}
+ );
+</script>
+ 
+
+ 
+
+</body>
+</html>
